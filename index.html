@@ -7,18 +7,21 @@
 		<meta name="author" content="Ana Souza">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<title>Meu Perfil</title>
+
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css">
 	</head>
 	<body>
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 					<!-- Seu nome -->
-					<h1>Meu Portfólio</h1>
+					<h1>Meu Portfólio  ✨</h1>
 				</div>
-
+				
 				<!-- Conteudo do Menu da Página (header) -->
 				<div id="menu">
 					<!-- Menu da Página -->
@@ -41,50 +44,58 @@
 		<main>
 
 			<!-- Seção Sobre você -->
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<!-- Título da Seção -->
-				<h2>Ana Souza</h2>
+				<h2>Sobre a Ana Souza</h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class ="flex">
 
 					<!-- Imagem do criador do conteúdo -->
 					<img
 						src="https://github.com/anakelys.png"
 						alt="Foto do criador desse conteudo"
-						width="250"
+						class="img_profile"
 						style="border-radius: 50%;"
 					/>
 
 					<!-- Texto sobre o criador do conteúdo -->
 					<article id="sobre_texto">
-						<h4>Um Pouco Sobre Mim:</h4>
+						
 						<p>
-							Olá! Me chamo Ana e este é o meu primeiro projeto em HTML. 
-							Estou muito feliz por ver tudo funcionando da melhor forma possível até agora!
-							Como este projeto tem um formato de portfólio/perfil pessoal, aproveito para compartilhar um pouco sobre mim. 
-							O vídeo abaixo representa bem a minha personalidade, pois me identifico profundamente com trilhas sonoras e filmes. 
-							Acredito que todos nós somos influenciados por algo ao longo da vida para moldar quem somos. 
-							No meu caso, posso dizer que sou uma pessoa clássica. 🎬🎶
-							Seja bem-vindo(a) e espero que goste do projeto! 😊
+							Olá! Meu nome é Ana Kely e este é o meu primeiro projeto em HTML. 
+							Estou muito feliz por vê-lo funcionando como imaginei! 
 						</p>
+
+						<p>Como este projeto tem o formato de portfólio e perfil pessoal, 
+							aproveito para compartilhar um pouco sobre mim. Sempre fui fascinada por arte,
+							seja visual, sonora ou até mesmo em sua essência mais abstrata. Sou movida por desafios
+							e pela constante busca pelo conhecimento, por isso ando me capacitando para me tornar desenvolvedora.
+							Também sou uma grande apreciadora de cinema e música,
+							pois acredito que histórias e trilhas sonoras têm um poder único de nos conectar com emoções e momentos especiais.</p>
+						<p>
+							O vídeo abaixo representa bem a minha personalidade. Para mim, a arte e o conhecimento moldam quem somos,
+							e no meu caso, sou alguém clássica, no melhor sentido da palavra. 🎬🎶
+						</p>
+						<p>
+							Seja bem-vindo(a) e espero que goste do projeto! 😊</p>
 					</article>
 				</div>
 			</section>
 
 			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
+			<section id="video" class="flex_start" >
 				
 				<!-- Título da Seção -->
 				<h2>Minha trilha sonora:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div class="youtube">
+				<div id="youtube" class="flex">
 					<iframe
 						width="560"
 						height="315"
-						src="https://www.youtube.com/embed/B8vtnVWrR64?autoplay=1&mute=0&controls=0&showinfo=0"
+						src="https://www.youtube.com/embed/-LZT2BGSoIo?autoplay=1&mute=0&controls=0&showinfo=0"
 						frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen
@@ -96,19 +107,19 @@
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
 			<!-- Seção de Contato - Redes Sociais-->
             <section id="redes_sociais">
 
                     <a href="https://www.linkedin.com/in/anaksouza/" target="_blank">
-                        <img src="img/linkedin.svg" alt="LinkedIn" />
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
                     </a>
                     <a href="https://github.com/anakelys" target="_blank">
-                        <img src="img/github.svg" alt="Github" />
+                        <img src="assets/img/github.svg" alt="Github" class="social_icon"/>
                     </a>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="img/instagram.svg" alt="Instagram" />
+                        <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
                     </a>
 
             </section>
